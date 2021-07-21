@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #868686;
+      text-align: center;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Imagens .webP - Não otimizadas</h1>
+  <section class="slider">
+    <div>
+      <img src="jpg/202106_BannerDesk_Institucional_29-90_v1__desktop.webp">
+    </div>
+    <div>
+      <img src="jpg/FullBanner_Desktop_Sorte_em_Dia_1440x472px.webp">
+    </div>
+    <div>
+      <img src="jpg/fullbanner_home_conmebol_13-07_v3.webp">
+    </div>
+    <div>
+      <img src="jpg/HL_Home_Desktop_HBO_max_2.webp">
+    </div>
+    <div>
+      <img src="jpg/HL_Home_Desktop_Telecine_promoção_filme_v3.webp">
+    </div>
+    <div>
+      <img src="jpg/HL_Home_Desktop_Upgrade_4k.webp">
+    </div>
+    <div>
+      <img src="jpg/HL_problema_equip_site_v02.webp">
+    </div>
+    <div>
+      <img src="jpg/SKYPLAY_Fullbanner_ChapeleiroLouco.webp">
+    </div>
+    <div>
+      <img src="jpg/SKYPLAY_Fullbanner_SmarTV.webp">
+    </div>            
+  </section>
+
+  <!-- <section class="lazy slider" data-sizes="50vw">
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=4-350w"  data-srcset="http://placehold.it/650x300?text=4-650w 650w, http://placehold.it/960x300?text=4-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=5-350w"  data-srcset="http://placehold.it/650x300?text=5-650w 650w, http://placehold.it/960x300?text=5-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=6-350w"  data-srcset="http://placehold.it/650x300?text=6-650w 650w, http://placehold.it/960x300?text=6-960w 960w">
+    </div>
+  </section> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".slider").slick({
+        dots: true,
+        infinite: true
+      });
+      // $(".lazy").slick({
+      //   lazyLoad: 'ondemand', // ondemand progressive anticipated
+      //   infinite: true
+      // });
+    });
+</script>
+
+</body>
+</html>
