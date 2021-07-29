@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <meta name="appleid-signin-client-id" content="br.com.comprealugueagora.signin">
+  <meta name="appleid-signin-scope" content="name email">
+  <meta name="appleid-signin-redirect-uri" content="https://alineaferreira.github.io/optimize/">
+  <meta name="appleid-signin-state" content="origin:web"> 
+  <meta name="appleid-signin-use-popup" content="true">
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #868686;
+      text-align: center;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Social Login</h1>
+
+  <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign in"></div>
+  <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+
+</body>
+</html>
