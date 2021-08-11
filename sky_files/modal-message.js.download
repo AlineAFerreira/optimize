@@ -1,0 +1,1 @@
+define(["jquery","bootstrap"],function(){function a(a,o,d){var s=$("#modalMessage"),e='<span class="sky_icon '+a+'"></span><strong>'+o+"</strong><p>"+d+"</p>";s.find(".modal-body").empty(),s.find(".modal-body").html(e),$("#modalMessage").modal("show")}"undefined"!=typeof acc&&(acc.modal?acc.modal.loadMessage=a:acc.modal={loadMessage:a})});
